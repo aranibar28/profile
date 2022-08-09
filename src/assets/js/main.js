@@ -190,7 +190,7 @@
         /*-------------------------------------
             client carousel 
         -------------------------------------*/
-        var $clientCarousel2 = $('.client-slider-2');
+        /* var $clientCarousel2 = $('.client-slider-2');
         if ($clientCarousel2.length > 0) {
             $clientCarousel2.owlCarousel({
                 loop: false,
@@ -214,7 +214,7 @@
                     }
                 }
             });
-        }
+        } */
 
         /*--------------------------------------
             testimonial-slider
@@ -281,7 +281,7 @@
         /*-------------------------------------
             team slider
         -------------------------------------*/
-        var $teamCarousel = $('.team-slider');
+        /* var $teamCarousel = $('.team-slider');
         if ($teamCarousel.length > 0) {
             $teamCarousel.owlCarousel({
                 loop: true,
@@ -295,7 +295,7 @@
                 animateIn: 'fadeIn',
                 navText:['<img src="assets/img/startup/left.png" alt="arrow">','<img src="assets/img/startup/right.png" alt="arrow">'],
             });
-        }
+        } */
 
         /*-------------------------------------
             marketing slider

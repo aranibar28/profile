@@ -1,11 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { PublicService } from 'src/app/services/public.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  public projects: Array<any> = [];
 
-  ngOnInit(): void {}
+  constructor(private publicService: PublicService) {}
+
+  ngOnInit(): void {
+    this.projects = this.publicService.projects;
+    setTimeout(() => {
+      this.publicService.init_carrousel();
+    }, 100);
+  }
 }

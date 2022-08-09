@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProcessComponent } from './process/process.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    SharedModule,
+    RouterModule,
   ],
 })
 export class PagesModule {}
