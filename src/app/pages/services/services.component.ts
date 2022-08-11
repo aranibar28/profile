@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PublicService } from 'src/app/services/public.service';
+declare function init_gallery(): any;
 
 @Component({
   selector: 'app-services',
@@ -12,5 +13,6 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit(): void {
     this.services = this.publicService.services;
+    init_gallery();
   }
 }

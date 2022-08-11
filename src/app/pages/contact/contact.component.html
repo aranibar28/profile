@@ -15,19 +15,12 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-xl-4 col-lg-5">
-                <img src="assets/img/others/21.png" alt="blog">
+                <img src="assets/img/contact/1.png" alt="blog">
             </div>
             <div class="col-lg-7 offset-xl-1">
                 <form (ngSubmit)="send_email()" [formGroup]="myForm" class="riyaqas-form-wrap mt-5 mt-lg-0">
                     <div class="row custom-gutters-16">
-                        <div class="col-md-6">
-                            <small *ngIf="validators('names')" class="text-danger">Este campo es obligatorio.</small>
-                            <div class="single-input-wrap mt-2">
-                                <input formControlName="names" type="text" class="single-input">
-                                <label>Nombres</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <small *ngIf="validators('email')" class="text-danger">Este campo es obligatorio.</small>
                             <div class="single-input-wrap mt-2">
                                 <input formControlName="email" type="text" class="single-input">

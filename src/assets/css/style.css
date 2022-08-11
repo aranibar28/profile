@@ -3540,19 +3540,22 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding-top: 40px; }
 
 .service-area {
-  position: relative; }
-  .service-area:after {
-    content: '';
-    position: absolute;
-    background-image: url("../../assets/img/service/bg.png");
-    background-repeat: no-repeat;
-    right: 0;
-    top: 50%;
-    background-size: auto;
-    left: 94%;
-    bottom: 0;
-    margin-top: -150px;
-    z-index: -1; }
+  position: relative; 
+}
+
+.service-area:after {
+  content: '';
+  position: absolute;
+  background-image: url("../../assets/img/bg/bg.png");
+  background-repeat: no-repeat;
+  right: 0;
+  top: 50%;
+  background-size: auto;
+  left: 94%;
+  bottom: 0;
+  margin-top: -150px;
+  z-index: -1;
+}
 
 .sbs-what-riyaqas {
   background-repeat: no-repeat;
@@ -6721,10 +6724,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       letter-spacing: 0.48px;
       font-weight: 500;
       display: block; }
-  .single-work-item:hover .thumb img {
-    -webkit-transform: scale(1.1) rotate(3deg);
-    -ms-transform: scale(1.1) rotate(3deg);
-    transform: scale(1.1) rotate(3deg); }
   .single-work-item:hover .thumb:before {
     left: 0;
     top: 0;
