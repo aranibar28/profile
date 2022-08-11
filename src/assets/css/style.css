@@ -6193,7 +6193,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       .sb-hosting-tabs .nav-item a.active {
         border: 1px solid var(--main-color-one);
         background: var(--main-color-one);
-        color: #fff; }
+        color: #fff !important; }
         .sb-hosting-tabs .nav-item a.active img {
           -webkit-filter: brightness(200);
           filter: brightness(200); }

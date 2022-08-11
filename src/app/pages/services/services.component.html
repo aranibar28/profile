@@ -3,179 +3,132 @@
 <!-- breadcrumb area End -->
 
 <!-- service area start -->
-<div class="service-area pd-top-112">
+<div class="service-area sbtc-service-area pd-top-120">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-10">
-                <div class="section-title text-center margin-bottom-90">
-                    <h2 class="title">What <span>Service</span> We are Providing?</h2>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. support team will get assistance AI-powered suggestions.</p>
+            <div class="col-xl-8">
+                <div class="section-title text-md-center">
+                    <h2 class="title">¿Qúe <span>servicios</span> ofrezco?</h2>
+                    <p>Desarrollar tu página web es un elemento fundamental, pero es solo el punto de partida de lo que se puede lograr.</p>
                 </div>
             </div>
         </div>
-        <div class="row custom-gutters-16">
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/project.png" alt="service">
-                    <h6><a href="#">Branding Idendity</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
+        <div class="row custom-gutters-16 justify-content-center">
+            <div *ngFor="let item of services" class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="single-service-2 style-two text-center">
+                    <div class="thumb">
+                        <img [src]="item.image" alt="service">
                     </div>
+                    <h6>{{ item.title }}</h6>
+                    <p>{{ item.description }}</p>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/hiring.png" alt="service">
-                    <h6><a href="#">Business Consultancy</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/checklist.png" alt="service">
-                    <h6><a href="#">UI/UX - Design</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/analytics.png" alt="service">
-                    <h6><a href="#">Market Analysis</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/5.png" alt="service">
-                    <h6><a href="#">Digital Magketing</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>  
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/6.png" alt="service">
-                    <h6><a href="#">Problem Solution</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>  
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/7.png" alt="service">
-                    <h6><a href="#">Project Analysis</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>  
-            <div class="col-xl-3 col-md-6 col-sm-6">
-                <div class="single-service">
-                    <img src="assets/img/service/8.png" alt="service">
-                    <h6><a href="#">Testing</a></h6>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
-                    <div class="read-more">
-                        <a href="#"><img src="assets/img/service/arrow.png" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>   
         </div>
     </div>
 </div>
-<!-- service area End -->
+<!-- service area end -->
 
-<!-- pricing area start -->
-<div class="sba-pricing-area bg-gray  mg-top-105 pd-default-two">
+<!-- software area start -->
+<div class="software-store-area mg-top-120 ">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-9">
+            <div class="col-12">
                 <div class="section-title text-center">
-                    <h2 class="title">Choose your <span>pricing</span></h2>
-                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions.</p>
+                    <h2 class="title">Softwares administrativos para <span>difetentes rubros</span></h2>
+                    <p>Puntos de ventas, facturacción, inventario, CRM</p>
                 </div>
             </div>
         </div>
-        <div class="row custom-gutters-20">
-            <div class="col-xl-3 col-sm-6">
-                <div class="single-pricing text-center">
-                    <h6 class="title">INDIVIDUAL</h6>
-                    <div class="thumb">
-                        <img src="assets/img/price/1.png" alt="pricing">
-                    </div>
-                    <h3 class="price">Free <span>/anully</span></h3>
-                    <ul>
-                        <li>1000 Messages per month</li>
-                        <li>2 GB file storage</li>
-                        <li>20 Projects per month</li>
-                        <li>Premium support</li>
+    </div>
+    <div class="bg-after pd-top-120 pd-bottom-90 jarallax blue-bg">   
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-11">
+                    <ul class="software-store-wrap">
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss1.svg" alt="img">
+                                </div>
+                                <h4>Restaurates</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss2.svg" alt="img">
+                                </div>
+                                <h4>Tienda online</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss3.svg" alt="img">
+                                </div>
+                                <h4>Artesanía</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss4.svg" alt="img">
+                                </div>
+                                <h4>Electrodomésticos</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss5.svg" alt="img">
+                                </div>
+                                <h4>Hospitales</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss6.svg" alt="img">
+                                </div>
+                                <h4>Dispensadores</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss7.svg" alt="img">
+                                </div>
+                                <h4>Ropa y calzados</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss8.svg" alt="img">
+                                </div>
+                                <h4>Productos de belleza</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss9.svg" alt="img">
+                                </div>
+                                <h4>Inventario</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="single-software-store text-center">
+                                <div class="thumb">
+                                    <img src="http://protodone.com/assets/img/icons/ss10.svg" alt="img">
+                                </div>
+                                <h4>Juguetes</h4>
+                            </a>
+                        </li>
                     </ul>
-                    <a class="btn btn-white btn-rounded" href="#">Get Start</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6">
-                <div class="single-pricing text-center single-pricing-active">
-                    <h6 class="title">SMALL BUSINESS</h6>
-                    <div class="thumb">
-                        <img src="assets/img/price/2.png" alt="pricing">
-                    </div>
-                    <h3 class="price">$11 <span>/anully</span></h3>
-                    <ul>
-                        <li>1000 Messages per month</li>
-                        <li>2 GB file storage</li>
-                        <li>20 Projects per month</li>
-                        <li>Premium support</li>
-                    </ul>
-                    <a class="btn btn-white btn-rounded" href="#">Get Start</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6">
-                <div class="single-pricing text-center">
-                    <h6 class="title">MEDIUM COMPANY</h6>
-                    <div class="thumb">
-                        <img src="assets/img/price/3.png" alt="pricing">
-                    </div>
-                    <h3 class="price">$22 <span>/anully</span></h3>
-                    <ul>
-                        <li>1000 Messages per month</li>
-                        <li>2 GB file storage</li>
-                        <li>20 Projects per month</li>
-                        <li>Premium support</li>
-                    </ul>
-                    <a class="btn btn-white btn-rounded" href="#">Get Start</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6">
-                <div class="single-pricing text-center mg-bottom-0-767">
-                    <h6 class="title">ENTERPRISE</h6>
-                    <div class="thumb">
-                        <img src="assets/img/price/4.png" alt="pricing">
-                    </div>
-                    <h3 class="price">$33 <span>/anully</span></h3>
-                    <ul>
-                        <li>1000 Messages per month</li>
-                        <li>2 GB file storage</li>
-                        <li>20 Projects per month</li>
-                        <li>Premium support</li>
-                    </ul>
-                    <a class="btn btn-white btn-rounded" href="#">Get Start</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- pricing area End -->
+<!-- software area end -->

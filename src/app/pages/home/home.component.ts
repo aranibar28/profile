@@ -6,14 +6,15 @@ import { PublicService } from 'src/app/services/public.service';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
+  public services: Array<any> = [];
   public projects: Array<any> = [];
+  public questions: Array<any> = [];
 
   constructor(private publicService: PublicService) {}
 
   ngOnInit(): void {
+    this.services = this.publicService.services;
     this.projects = this.publicService.projects;
-    setTimeout(() => {
-      this.publicService.init_carrousel();
-    }, 100);
+    this.questions = this.publicService.questions;
   }
 }

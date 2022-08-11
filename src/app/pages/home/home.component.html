@@ -5,9 +5,9 @@
             <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="header-inner-details">
                     <div class="header-inner">
-                        <h3 class="sub-title wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0s">Mi nombre es Gerson Aranibar:</h3>
+                        <h3 class="sub-title wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0s">Mi nombre es Gerson Aranibar</h3>
                         <h1 class="title wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"><span>Ingeniero de Sistemas</span> Desarrollador Fullstack</h1>
-                        <p class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Tengo más de 2 años de experiencia realizando páginas web profesionales y<br>desarrollando softwares que te ayudarán en la gestión de tus procesos.</p>
+                        <p class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Tengo más de 2 años de experiencia realizando aplicaciones web profesionales y<br>desarrollando softwares que te ayudarán en la gestión de tus negocio.</p>
                         <div class="btn-wrapper desktop-left padding-top-20 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
                             <a routerLink="/services" class="btn btn-radius btn-red">Servicios</a>
                         </div>
@@ -31,45 +31,18 @@
             <div class="col-xl-8">
                 <div class="section-title text-md-center">
                     <h2 class="title">¿Qúe <span>servicios</span> ofrezco?</h2>
-                    <p>Diseñar tu página web es un elemento fundamental, pero es solo el punto de partida de lo que se puede lograr.</p>
+                    <p>Desarrollar tu página web es un elemento fundamental, pero es solo el punto de partida de lo que se puede lograr.</p>
                 </div>
             </div>
         </div>
         <div class="row custom-gutters-16 justify-content-center">
-            <div class="col-xl-3 col-lg-6 col-sm-6">
+            <div *ngFor="let item of services" class="col-xl-3 col-lg-6 col-sm-6">
                 <div class="single-service-2 style-two text-center">
                     <div class="thumb">
-                        <img src="assets/img/startup/service/3.png" alt="service">
+                        <img [src]="item.image" alt="service">
                     </div>
-                    <h6>Análisis y Diseño</h6>
-                    <p>Documentación del proyecto mediante fases, Deficición de Requerimientos, Casos de Uso, Diagramacición UML.</p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-sm-6">
-                <div class="single-service-2 style-two text-center">
-                    <div class="thumb">
-                        <img src="assets/img/startup/service/1.png" alt="service">
-                    </div>
-                    <h6>Maquetación Web</h6>
-                    <p>Creación del diseño que implica la composición e interactividad que tendrá tu página web con el usuario final.</p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-sm-6">
-                <div class="single-service-2 style-two text-center">
-                    <div class="thumb">
-                        <img src="assets/img/startup/service/2.png" alt="service">
-                    </div>
-                    <h6>Desarrollo Web</h6>
-                    <p>Desarrollo de aplicaciones empresariales, mediante el uso de frameworks, lenguaje de programación y base de datos.</p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-sm-6">
-                <div class="single-service-2 style-two text-center">
-                    <div class="thumb">
-                        <img src="assets/img/startup/service/4.png" alt="service">
-                    </div>
-                    <h6>Creación API REST</h6>
-                    <p>Construcción de APIs con sus respectivos métodos HTTP para obtener y almacenar recursos o servicios de manera segura.</p>
+                    <h6>{{ item.title }}</h6>
+                    <p>{{ item.description }}</p>
                 </div>
             </div>
         </div>
@@ -78,13 +51,13 @@
 <!-- service area end -->
 
 <!-- help area Start -->
-<div class="about-area sbst-provide-security pd-top-100 pb-0" style="background-image:url(https://3norma.com/assets/img/bg/11.png);">
+<div class="about-area sbst-provide-security pd-top-120" style="background-image:url(https://3norma.com/assets/img/bg/11.png);">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-5 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-                <div class="img-vector img-with-video img-with-video-2">
+                <div class="img-with-video img-with-video-2">
                     <div class="img-wrap">
-                        <img src="https://3norma.com/assets/img/others/9.png" alt="img">
+                        <img src="assets/img/others/4.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -94,10 +67,10 @@
                         <h2 class="title">¿Por qué elegirme para <br><span>desarrollar tu página?</span></h2>
                     </div>
                     <ul class="riyaqas-list-3 mb-0">
-                        <li>Tengo más de 5 años desarrollando sitios web profesionales. Siempre me actualizo para saber las ultimas tendencias en diseño, animaciones, posicionamiento seo, ux (experiencia de usuario).</li>
-                        <li>Usaré mi creatividad e innovación para poder diseñarte una página web profesional ya que es el punto clave para que resaltes de la competencia.</li>
-                        <li>Siempre trabajo con responsabilidad para que todo trabajo quede terminado en la fecha pactada.</li>
-                        <li class="mb-0">Los precios de mis trabajos son accesibles para las personas que tienen su pequeña y mediana empresa.</li>
+                        <li class="mb-3">Tengo más de 2 años desarrollando sitios web profesionales. Siempre me actualizo para saber las ultimas tendencias en diseño, animaciones, posicionamiento seo.</li>
+                        <li class="mb-3">Usaré mi creatividad e innovación para poder diseñarte una página web profesional ya que es el punto clave para que resaltes de la competencia.</li>
+                        <li class="mb-3">Siempre trabajo con responsabilidad para que todo trabajo quede terminado en la fecha pactada.</li>
+                        <li class="mb-3">Los precios de mis trabajos son accesibles para las personas que tienen su pequeña y mediana empresa.</li>
                     </ul>
                 </div>
             </div>
@@ -106,111 +79,83 @@
 </div>
 <!-- help area End -->
 
-<!-- client area start -->
-<div class="client-area mg-top-100 bg-gray pd-top-110 pd-bottom-120">
+<!-- soft-box area start -->
+<div class="sbs-what-riyaqas pd-default-120 mg-top-120" style="background-image:url(assets/img/bg/1h1.png);">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-9">
-                <div class="section-title style-two text-md-center">
-                    <h2 class="title">Nuestros <span>Clientes</span></h2>
-                    <p>Riyaqas es una de las mejores empresas de desarrollo de software. Riyaqas está a la vanguardia como la más innovadora empresa de desarrollo web. Nuestro costo eficiente y estructurado trabajo en equipo.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-xl-10">
-                <div class="client-slider-2">
-                    <div class="item">
-                        <a href="#" class="thumb">
-                            <img src="assets/img/startup/client/11.png" alt="client">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="thumb">
-                            <img src="assets/img/startup/client/22.png" alt="client">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="thumb">
-                            <img src="assets/img/startup/client/33.png" alt="client">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="thumb">
-                            <img src="assets/img/startup/client/44.png" alt="client">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="thumb">
-                            <img src="assets/img/startup/client/55.png" alt="client">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="thumb">
-                            <img src="assets/img/startup/client/66.png" alt="client">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- client area End -->
-
-<!-- Team area Start -->
-<div class="sbtc-team-section mg-top-65">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8">
-                <div class="section-title text-md-center">
-                    <h2 class="title">Aplicaciones <span>Comerciales</span></h2>
-                    <p>Revisa mis últimos trabajos que he realizado.</p>
-                </div>
-            </div>
-        </div>
         <div class="row">
-            <div class="col-xl-10 offset-xl-1">
-                <div class="team-slider">
-
-                    <div *ngFor="let item of projects" class="team-slider-item">
-                        <div class="row">
-                            <div class="col-lg-6 order-lg-12">
-                                <div class="team-member-img">
-                                    <div class="team-shape1"></div>
-                                    <div class="thumb">
-                                        <img src="assets/img/startup/team/t1.png" alt="team">
-                                    </div>
-                                    <div class="team-shape2"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 order-lg-1">
-                                <div class="team-member-details">
-                                    <h3>{{ item.title }} <span>{{ item.subtitle }}</span></h3>
-                                    <p>{{ item.description }}</p>
-                                    <span class="name d-block">Stack Tecnológico</span>
-                                    <ul>
-                                        <li>
-                                            <a><img [src]="item.stack1" alt="img"></a>
-                                        </li>
-                                        <li>
-                                            <a><img [src]="item.stack2" alt="img"></a>
-                                        </li>
-                                        <li>
-                                            <a><img [src]="item.stack3" alt="img"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+            <div class="col-lg-6 desktop-center-item wow animated fadeInRight">
+                <div class="desktop-center-area">
+                    <div class="section-title style-two">
+                        <h2 class="title">¿Qué tipos de <span>Software</span> realizo?</h2>
+                        <p style="max-width: 700px;">Realizo todo tipo de sistemas, desde una página web estática para tu negocio hasta una aplicación web dinámica completamente funcional que abarque el ecosistema de tus procesos.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Página Web</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>E-Commerce</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Sistema ERP</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Sistema CRM</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Sistema Puntos de Venta</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Sistema de Inventarios</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Sistema de Restaurantes</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Sistema de Citas</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <ul>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Gestión de Usuarios</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Gestión de Categorías</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Gestión de Productos</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Gestión de Ventas</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Gestión de Pedidos</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Gestión de Descuentos</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Pasarelas de Pagos</span>
+                                </li>
+                                <li class="riyaqas-check-list style-two">
+                                    <span>Facturacción Electrónica</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    
-     
                 </div>
+            </div>
+            <div class="col-lg-6 desktop-center-item wow animated fadeInLeft">
+                <img src="assets/img/we-provide/5.png" alt="img">
             </div>
         </div>
     </div>
 </div>
-<!-- Team area End -->
+<!-- soft-box area End -->
 
 <!-- faq area Start -->
 <div class="faq-area pd-top-105">
@@ -218,65 +163,23 @@
         <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-11">
                 <div class="section-title style-five text-center">
-                    <h2 class="title">Navegación <span>Rápida</span></h2>
-                    <p class="sub-title"><span>¿No encuentras la respuesta</span><br> Llámame al (+51) 940994003 o envíame un correo electrónico a aranibargerson28@gmail.com</p>
+                    <h2 class="title">Preguntas <span>Frecuentes</span></h2>
+                    <p class="sub-title"><span>¿Tienes otras consultas?</span><br> 
+                        Envíame un mensaje de whatsapp al <a class="sub-title" href="https://wa.me/51940994003" target="_blank">+51 940994003</a> 
+                        o un correo electrónico a <a class="sub-title" href="mailto:aranibargerson28@gmail.com">aranibargerson28@gmail.com</a>
+                    </p>
                 </div>
-                <div class="accordion style-two accordion-h-five" id="accordion">
-                    <!-- single accordion -->
-                    <div class="single-accordion card">
-                        <div class="card-header" id="headingOne">
+                <div class="accordion style-two" id="accordion">
+                    <div *ngFor="let item of questions; let i = index" class="single-accordion card">
+                        <div class="card-header">
                             <h2 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is your refund policy ?</button>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" [attr.data-target]="'#collapse-' + i" aria-expanded="true">{{ item.title }}</button>
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Riyaqas One of the best Softwire Development company. Riyaqas is at the standard industry's forefront as the most innovative development company. Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company.
-                            </div>
+                        <div [id]="'collapse-' + i" class="collapse" data-parent="#accordion">
+                            <div class="card-body">{{ item.description }}</div>
                         </div>
                     </div>
-                    <!-- single accordion -->
-                    <div class="single-accordion card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">How many elements in Riyaqas?</button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                Riyaqas One of the best Softwire Development company. Riyaqas is at the standard industry's forefront as the most innovative development company. Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single accordion -->
-                    <div class="single-accordion card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">How long does delivery take?</button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                Riyaqas One of the best Softwire Development company. Riyaqas is at the standard industry's forefront as the most innovative development company. Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single accordion -->
-                    <div class="single-accordion card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">¿Cómo es el método de pago?</button>
-                            </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                            <div class="card-body">
-                                Realiza el pago mediante depósito o transferencia bancaria BCP, INTERBANK, BBVA o SKOTIABANK. <br>
-                                También puedes realizar el pago mediante billeteras digitales con YAPE, LUKITA o PLIM. <br>
-                                Envíame un mensaje por whatsapp para mayor información.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single accordion end -->
                 </div>
             </div>
         </div>

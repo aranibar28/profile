@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.active {
+  color: #f9556d !important;
+  pointer-events: none;
+}
+
 .header-thumb {
   img {
     animation: vector 6s ease-in-out infinite;

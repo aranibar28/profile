@@ -8,8 +8,8 @@
         <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8">
                 <div class="section-title text-center w-100">
-                    <h2 class="title">Send you <span>inquary</span></h2>
-                    <p>Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.</p>
+                    <h2 class="title">Pregunta como <span>puedo ayudarte</span></h2>
+                    <p>Estoy aquí para brindarte más información y para responder cualquier duda que puedas tener.</p>
                 </div>
             </div>
         </div>
@@ -18,34 +18,39 @@
                 <img src="assets/img/others/21.png" alt="blog">
             </div>
             <div class="col-lg-7 offset-xl-1">
-                <form class="riyaqas-form-wrap mt-5 mt-lg-0">
+                <form (ngSubmit)="send_email()" [formGroup]="myForm" class="riyaqas-form-wrap mt-5 mt-lg-0">
                     <div class="row custom-gutters-16">
                         <div class="col-md-6">
-                            <div class="single-input-wrap">
-                                <input type="text" class="single-input">
-                                <label>Name</label>
+                            <small *ngIf="validators('names')" class="text-danger">Este campo es obligatorio.</small>
+                            <div class="single-input-wrap mt-2">
+                                <input formControlName="names" type="text" class="single-input">
+                                <label>Nombres</label>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="single-input-wrap">
-                                <input type="text" class="single-input">
-                                <label>E-mail</label>
+                            <small *ngIf="validators('email')" class="text-danger">Este campo es obligatorio.</small>
+                            <div class="single-input-wrap mt-2">
+                                <input formControlName="email" type="text" class="single-input">
+                                <label>Correo</label>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="single-input-wrap">
-                                <input type="text" class="single-input">
-                                <label>Subject</label>
+                            <small *ngIf="validators('subject')" class="text-danger">Este campo es obligatorio.</small>
+                            <div class="single-input-wrap mt-2">
+                                <input formControlName="subject" type="text" class="single-input">
+                                <label>Asunto</label>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="single-input-wrap">
-                                <textarea class="single-input textarea" cols="20"></textarea>
-                                <label class="single-input-label">Message</label>
+                            <small *ngIf="validators('message')" class="text-danger">Este campo es obligatorio.</small>
+                            <div class="single-input-wrap mt-2">
+                                <textarea formControlName="message" class="single-input textarea" cols="20"></textarea>
+                                <label class="single-input-label">Mensaje</label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <a class="btn btn-red mt-0" href="#">Send</a>
+                            <button *ngIf="!load_btn" type="submit" class="btn btn-red mt-0">Enviar</button>
+                            <button *ngIf="load_btn" type="button" class="btn btn-red mt-0" disabled>Enviando</button>
                         </div> 
                     </div>
                 </form>
