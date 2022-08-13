@@ -2,15 +2,10 @@
     <div class="container nav-container">
         <div class="responsive-mobile-menu">
             <div class="logo-wrapper mobile-logo">
-                <a routerLink="/" class="logo">
-                    <img [ngClass]="path == '/' ? '' : 'd-none'" class="main-logo" src="assets/img/sticky-logo.png" alt="logo">
-                    <img class="sticky-logo" src="assets/img/logo.png" alt="logo">
-                </a>
+                <app-logo path={{path}}></app-logo>
             </div>
             <div class="nav-right-content">
-                <ul>
-                    <li class="search"><i class="ti-search"></i></li>
-                </ul>
+                <ul><li class="search"><i class="ti-search"></i></li></ul>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#riyaqas_main_menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggle-icon">
@@ -22,10 +17,7 @@
         </div>
         <div class="collapse navbar-collapse" id="riyaqas_main_menu">
             <div class="logo-wrapper desktop-logo">
-                <a routerLink="/" class="logo">
-                    <img [ngClass]="path == '/' ? '' : 'd-none'" class="main-logo" src="assets/img/sticky-logo.png" alt="logo">
-                    <img class="sticky-logo" src="assets/img/logo.png" alt="logo">
-                </a>
+                <app-logo path={{path}}></app-logo> 
             </div>
             <ul class="navbar-nav text-right">
                 <li><a routerLink="/">Inicio</a></li>
@@ -36,5 +28,4 @@
             </ul>
         </div>
     </div>
-  </nav>
-  
+</nav>
