@@ -51,3 +51,34 @@
         </div>
     </div>
 </div>
+<!-- contact form End -->
+
+<!-- faq area Start -->
+<div class="faq-area pd-top-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-11">
+                <div class="section-title style-five text-center">
+                    <h2 class="title">Preguntas <span>Frecuentes</span></h2>
+                    <p class="sub-title"><span>¿Tienes otras consultas?</span><br> 
+                        Envíame un mensaje de whatsapp al <a class="sub-title" href="https://wa.me/51940994003" target="_blank">+51 940994003</a> 
+                        o un correo electrónico a <a class="sub-title" href="mailto:aranibargerson28@gmail.com">aranibargerson28@gmail.com</a>
+                    </p>
+                </div>
+                <div class="accordion style-two" id="accordion">
+                    <div *ngFor="let item of questions; let i = index" class="single-accordion card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" [attr.data-target]="'#collapse-' + i" aria-expanded="true">{{ item.title }}</button>
+                            </h2>
+                        </div>
+                        <div [id]="'collapse-' + i" class="collapse" data-parent="#accordion">
+                            <div class="card-body">{{ item.description }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- faq area End -->

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { PublicService } from 'src/app/services/public.service';
 declare function init_forms(): any;
 
 @Component({
@@ -8,10 +9,12 @@ declare function init_forms(): any;
 })
 export class ContactComponent implements OnInit {
   public load_btn: boolean = false;
+  public questions: Array<any> = [];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private publicService: PublicService, private fb: FormBuilder) {}
 
   ngOnInit(): void {
+    this.questions = this.publicService.questions;
     init_forms();
   }
 
