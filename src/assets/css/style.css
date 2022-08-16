@@ -3546,7 +3546,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .service-area:after {
   content: '';
   position: absolute;
-  background-image: url("../../assets/img/bg/bg.png");
+  background-image: url("../../assets/img/bg/3.png");
   background-repeat: no-repeat;
   right: 0;
   top: 50%;
@@ -6250,7 +6250,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     .single-team .thumb:after {
       content: '';
       position: absolute;
-      background-image: url("../img/startup/team/bg.png");
+      background-image: url("../img/startup/team/3.png");
       background-repeat: no-repeat;
       height: 300px;
       width: 300px;
