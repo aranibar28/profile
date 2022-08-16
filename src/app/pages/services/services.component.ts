@@ -8,11 +8,15 @@ declare function init_gallery(): any;
 })
 export class ServicesComponent implements OnInit {
   public services: Array<any> = [];
+  public gallery: Array<any> = [];
 
   constructor(public publicService: PublicService) {}
 
   ngOnInit(): void {
     this.services = this.publicService.services;
-    init_gallery();
+    this.gallery = this.publicService.gallery;
+    setTimeout(() => {
+      init_gallery();
+    }, 100);
   }
 }

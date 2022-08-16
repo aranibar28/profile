@@ -49,123 +49,27 @@
                         <li data-filter=".technology">Tecnologías</li>
                     </ul>
                     <div class="gallery-masonry row no-gutters">
-                        <div class="col-md-4 col-sm-6 masonry-item business technology">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/spam/1.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/spam/1.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="title">Mi Carta Digital</span>
-                                        <span class="text-warning">React / Python</span>
+
+                        <ng-container *ngFor="let item of gallery">
+                            <div class="col-md-4 col-sm-6 masonry-item" [class]="item.filter">
+                                <a class="single-work-item text-center" data-effect="mfp-zoom-in" [href]="item.image">
+                                    <span class="thumb">
+                                        <img [src]="item.image" alt="gallery">
                                     </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item finance technology">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/spam/2.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/spam/2.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="title">La Sabrosa</span>
-                                        <span class="text-warning">Angular</span>
+                                    <span class="content-wrap">
+                                        <span class="content">
+                                            <span class="title mb-2">{{ item.title }}</span>
+                                            <span class="bg-light border rounded px-2 py-3">
+                                                <ng-container *ngFor="let subitem of item.icons">
+                                                    <img width="36px" [src]="'assets/img/icons/' + subitem + '.svg'" />
+                                                </ng-container>
+                                            </span>
+                                        </span>
                                     </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item business management">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/spam/4.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/spam/3.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="title">Rencas Movie</span>
-                                        <span class="text-warning">React</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item finance technology">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/4.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/4.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="cats">UI/UX Design</span>
-                                        <span class="title">Ui Problem solving</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item finance management">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/5.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/5.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="cats">UI/UX Design</span>
-                                        <span class="title">Ui Problem solving</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item business technology">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/6.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/6.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="cats">UI/UX Design</span>
-                                        <span class="title">Ui Problem solving</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item finance management">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/7.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/7.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="cats">UI/UX Design</span>
-                                        <span class="title">Ui Problem solving</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item finance technology">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/8.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/8.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="cats">UI/UX Design</span>
-                                        <span class="title">Ui Problem solving</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item technology management">
-                            <a class="single-work-item text-center" data-effect="mfp-zoom-in" href="assets/img/gallery/9.png">
-                                <span class="thumb">
-                                    <img src="assets/img/gallery/9.png" alt="gallery">
-                                </span>
-                                <span class="content-wrap">
-                                    <span class="content">
-                                        <span class="cats">UI/UX Design</span>
-                                        <span class="title">Ui Problem solving</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        </ng-container>
+
                     </div>
                 </div>
            </div>

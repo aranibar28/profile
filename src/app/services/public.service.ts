@@ -56,22 +56,22 @@ export class PublicService {
     {
       title: 'Análisis y Diseño',
       description: 'Documentación del proyecto mediante fases, deficición de los Requerimientos, Casos de Uso, Diagramacición UML.',
-      image: 'assets/img/service/1.png',
+      image: 'assets/img/icons/1.png',
     },
     {
       title: 'Maquetación Web',
       description: 'Creación del diseño que implica la composición e interactividad que tendrá tu página web con el usuario final.',
-      image: 'assets/img/service/2.png',
+      image: 'assets/img/icons/2.png',
     },
     {
       title: 'Desarrollo Web',
       description: 'Desarrollo de aplicaciones empresariales, mediante el uso de frameworks, lenguaje de programación y base de datos.',
-      image: 'assets/img/service/3.png',
+      image: 'assets/img/icons/3.png',
     },
     {
       title: 'Creación API REST',
       description: 'Construcción de APIs con sus respectivos métodos HTTP para manipular recursos o servicios de manera segura.',
-      image: 'assets/img/service/4.png',
+      image: 'assets/img/icons/4.png',
     },
   ];
 
@@ -110,7 +110,7 @@ export class PublicService {
     },
   ];
 
-  questions:any[] = [
+  questions: any[] = [
     {
       title: '¿Cuánto es el costo de mi página web?',
       description: 'El costo del desarrollo de una página o aplicación web va a depender de los requerimientos del sistema, en mi caso ofrezco páginas web a partir de 300 soles y aplicaciones web por encima de los 400 soles.'
@@ -136,4 +136,61 @@ export class PublicService {
       description: 'Si toda página web viene con sus respectivos correos corporativos (ejemplo: info@empresa.com), de esta manera su empresa y/o negocio tendrá la formalidad correspondiente.'
     }
   ]
+
+  gallery: any[] = [
+    {
+      title: 'Sistema de Matrículas',
+      image: 'assets/img/gallery/4.png',
+      filter: 'management',
+      icons: ['html5', 'css3', 'typescript', 'angular', 'nodejs', 'mongodb'],
+    },
+    {
+      title: 'Sistema Administrativo',
+      image: 'assets/img/gallery/5.png',
+      filter: 'management',
+      icons: ['html5', 'css3', 'typescript', 'angular', 'nodejs', 'mongodb'],
+    },
+    {
+      title: 'Sistema Ecommerce',
+      image: 'assets/img/gallery/6.png',
+      filter: 'business technology',
+      icons: ['html5', 'css3', 'typescript', 'angular', 'nodejs', 'mongodb'],
+    },
+    {
+      title: 'Sistema de Citas Médicas',
+      image: 'assets/img/gallery/7.png',
+      filter: 'management',
+      icons: ['html5', 'css3', 'javascript', 'bootstrap', 'php', 'mysql'],
+    },
+    {
+      title: 'Sistema de Ventas y Facturación',
+      image: 'assets/img/gallery/8.png',
+      filter: 'business technology',
+      icons: ['html5', 'css3', 'javascript', 'bootstrap', 'php', 'mysql'],
+    },
+    {
+      title: 'Sistema para Restaurantes',
+      image: 'assets/img/gallery/9.png',
+      filter: 'business technology',
+      icons: ['html5', 'css3', 'javascript', 'react', 'python', 'django'],
+    },
+    {
+      title: 'Sistema ERP',
+      image: 'assets/img/gallery/1.png',
+      filter: 'management finance',
+      icons: ['html5', 'css3', 'javascript', 'bootstrap', 'php', 'mysql'],
+    },
+    {
+      title: 'Sistema Punto de Venta',
+      image: 'assets/img/gallery/2.png',
+      filter: 'finance management',
+      icons: ['html5', 'css3', 'javascript', 'bootstrap', 'php', 'mysql'],
+    },
+    {
+      title: 'Sistema de Almacén',
+      image: 'assets/img/gallery/3.png',
+      filter: 'finance management',
+      icons: ['html5', 'css3', 'javascript', 'bootstrap', 'php', 'mysql'],
+    },
+  ];
 }
