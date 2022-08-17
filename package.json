@@ -1,16 +1,17 @@
 {
-  "name": "profile",
+  "name": "aranibar",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run profile:serve-ssr",
     "serve:ssr": "node dist/profile/server/main.js",
     "build:ssr": "ng build && ng run profile:server",
-    "prerender": "ng run profile:prerender"
+    "prerender": "ng run profile:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
