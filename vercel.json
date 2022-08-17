@@ -1,11 +1,11 @@
 {
   "version": 2,
   "public": true,
-  "name": "aranibar",
+  "name": "profile",
   "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/aranibar/browser/**"
+      "includeFiles": "dist/profile/browser/**"
     }
   }
 }

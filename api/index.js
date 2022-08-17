@@ -1,3 +1,3 @@
-const server = require('../dist/aranibar/server/main');
+const server = require('../dist/profile/server/main');
 
 module.exports = server.app();
