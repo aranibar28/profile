@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PublicService } from 'src/app/services/public.service';
+import Swal from 'sweetalert2';
 declare function init_forms(): any;
 
 @Component({
@@ -30,10 +31,17 @@ export class ContactComponent implements OnInit {
       return;
     }
     this.load_btn = true;
-    setTimeout(() => {
-      this.load_btn = false;
-      console.log(this.myForm.value);
-    }, 3000);
+    this.publicService.send_message(this.myForm.value).subscribe({
+      next: (res) => {
+        this.myForm.reset();
+        this.load_btn = false;
+        Swal.fire('Listo!', 'Tu mensaje fue envíado!', 'success');
+      },
+      error: (error) => {
+        this.load_btn = false;
+        console.log(error);
+      },
+    });
   }
 
   validators(name: string) {

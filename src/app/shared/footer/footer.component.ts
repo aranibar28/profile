@@ -23,10 +23,6 @@ export class FooterComponent implements OnInit {
       return;
     }
     this.load_btn = true;
-    setTimeout(() => {
-      this.load_btn = false;
-      console.log(this.myForm.value);
-    }, 3000);
   }
 
   validators(name: string) {
