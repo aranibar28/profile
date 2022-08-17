@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { ImagePipe } from '../pipes/image.pipe';
 import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
 
@@ -12,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
 
+
 @NgModule({
   declarations: [
     PagesComponent,
@@ -20,12 +22,14 @@ import { ProcessComponent } from './process/process.component';
     AboutComponent,
     ContactComponent,
     ProcessComponent,
+    ImagePipe,
   ],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule,
     ReactiveFormsModule,
+    
   ],
 })
 export class PagesModule {}

@@ -61,7 +61,7 @@
                                             <span class="title mb-2">{{ item.title }}</span>
                                             <span class="bg-light border rounded px-2 py-3">
                                                 <ng-container *ngFor="let subitem of item.icons">
-                                                    <img width="36px" [src]="'assets/img/icons/' + subitem + '.svg'" [alt]="subitem" />
+                                                    <img width="36px" [src]="subitem | image" [alt]="subitem" />
                                                 </ng-container>
                                             </span>
                                         </span>
