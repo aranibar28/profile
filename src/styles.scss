@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-.active {
+.active-link {
   color: #f9556d !important;
   pointer-events: none;
 }
@@ -14,6 +14,10 @@
   img {
     animation: vector 6s ease-in-out infinite;
   }
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 @keyframes vector {

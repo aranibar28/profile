@@ -39,7 +39,7 @@
             <div *ngFor="let item of services" class="col-xl-3 col-lg-6 col-sm-6">
                 <div class="single-service-2 style-two text-center">
                     <div class="thumb">
-                        <img [src]="item.image" alt="service">
+                        <img [src]="item.image" [alt]="item.title">
                     </div>
                     <h6>{{ item.title }}</h6>
                     <p>{{ item.description }}</p>
@@ -66,12 +66,24 @@
                     <div class="section-title style-two">
                         <h2 class="title">¿Por qué elegirme para <br><span>desarrollar tu página?</span></h2>
                     </div>
-                    <ul class="riyaqas-list-3 mb-0">
-                        <li class="mb-3">Tengo más de 2 años desarrollando sitios web profesionales. Siempre me actualizo para saber las ultimas tendencias en diseño, animaciones, posicionamiento seo.</li>
-                        <li class="mb-3">Usaré mi creatividad e innovación para poder diseñarte una página web profesional ya que es el punto clave para que resaltes de la competencia.</li>
-                        <li class="mb-3">Siempre trabajo con responsabilidad para que todo trabajo quede terminado en la fecha pactada.</li>
-                        <li class="mb-3">Los precios de mis trabajos son accesibles para las personas que tienen su pequeña y mediana empresa.</li>
-                    </ul>
+                    <div class="riyaqas-check-list-wrap">
+                        <div class="riyaqas-check-list media mb-3">
+                            <img src="assets/img/icons/check2.svg" alt="check">
+                            <span>Tengo más de 2 años desarrollando sitios web profesionales. Siempre me actualizo para saber las ultimas tendencias en diseño, animaciones, posicionamiento seo.</span>
+                        </div>
+                        <div class="riyaqas-check-list media mb-3">
+                            <img src="assets/img/icons/check2.svg" alt="check">
+                            <span>Usaré mi creatividad e innovación para poder diseñarte una página web profesional ya que es el punto clave para que resaltes de la competencia.</span>
+                        </div>
+                        <div class="riyaqas-check-list media mb-3">
+                            <img src="assets/img/icons/check2.svg" alt="check">
+                            <span>Siempre trabajo con responsabilidad para que todo trabajo quede terminado en la fecha pactada.</span>
+                        </div>
+                        <div class="riyaqas-check-list media mb-3">
+                            <img src="assets/img/icons/check2.svg" alt="check">
+                            <span>Los precios de mis trabajos son accesibles para las personas que tienen su pequeña y mediana empresa.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,8 +91,53 @@
 </div>
 <!-- help area End -->
 
+<!-- client area start -->
+<div class="client-area mg-top-100 bg-gray pd-top-110 pd-bottom-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9">
+                <div class="section-title style-two text-md-center">
+                    <h2 class="title text-center">Stack <span>Tecnológico</span></h2>
+                    <p>El stack tecnológico, también llamado stack de soluciones o ecosistema de datos, es la lista de todos los servicios tecnológicos que utilizo para construir una aplicación web.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h4 class="text-center">Tecnologías Frontend</h4>
+            </div>
+            <div class="col-xl-10">
+                <div class="client-slider-2 owl-one">
+                    <div *ngFor="let item of frontend" class="item text-center">
+                        <a class="pointer">
+                            <img [src]="'assets/img/icons/' + item + '.svg'" [alt]="item" style="width: 40px; margin: 0 auto;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mt-5">
+            <div class="col-12">
+                <h4 class="text-center">Tecnologías Backend</h4>
+            </div>
+            <div class="col-xl-10">
+                <div class="client-slider-2 owl-two">
+                    <div *ngFor="let item of backend" class="item text-center">
+                        <a class="pointer">
+                            <img [src]="'assets/img/icons/' + item + '.svg'" [alt]="item" style="width: 40px; margin: 0 auto;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- client area End -->
+
 <!-- soft-box area start -->
-<div class="sbs-what-riyaqas pd-top-120" style="background-image:url(assets/img/bg/2.png);">
+<div class="sbs-what-riyaqas pd-top-120">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 desktop-center-item wow animated fadeInRight">
