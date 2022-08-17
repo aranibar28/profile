@@ -2194,6 +2194,12 @@
         line-height: 45px;
         font-size: 23px;
     }
+    .back-to-whatsapp {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 23px;
+    }
 
     
     
@@ -2486,6 +2492,15 @@
         font-size: 14px;
     }
     .back-to-top {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        right: 20px;
+        bottom: 70px;
+        font-size: 20px;
+    }
+
+    .back-to-whatsapp {
         width: 42px;
         height: 42px;
         line-height: 42px;

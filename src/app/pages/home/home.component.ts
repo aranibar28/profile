@@ -19,8 +19,9 @@ export class HomeComponent implements OnInit {
     this.questions = this.publicService.questions;
     this.frontend = this.publicService.frontend;
     this.backend = this.publicService.backend.reverse();
-    setTimeout(() => {
-      this.publicService.init_carrousel();
-    }, 100);
+  }
+
+  ngAfterViewInit(): void {
+    this.publicService.init_carrousel();
   }
 }

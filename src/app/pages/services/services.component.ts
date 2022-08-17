@@ -15,8 +15,9 @@ export class ServicesComponent implements OnInit {
   ngOnInit(): void {
     this.services = this.publicService.services;
     this.gallery = this.publicService.gallery;
-    setTimeout(() => {
-      init_gallery();
-    }, 100);
+  }
+
+  ngAfterViewInit(): void {
+    init_gallery();
   }
 }

@@ -10,14 +10,12 @@
   }
 }
 
-.img-vector {
-  img {
-    animation: vector 6s ease-in-out infinite;
-  }
-}
-
 .pointer {
   cursor: pointer;
+  img {
+    width: 40px !important;
+    margin: 0 auto;
+  }
 }
 
 @keyframes vector {
