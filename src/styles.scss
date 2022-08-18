@@ -4,17 +4,17 @@
   pointer-events: none;
 }
 
-.header-thumb {
-  img {
-    animation: vector 6s ease-in-out infinite;
-  }
-}
-
 .pointer {
   cursor: pointer;
   img {
     width: 40px !important;
     margin: 0 auto;
+  }
+}
+
+.header-thumb {
+  img {
+    animation: vector 6s ease-in-out infinite;
   }
 }
 
@@ -27,5 +27,82 @@
   }
   100% {
     transform: translateY(10px);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 80px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
   }
 }
