@@ -29,7 +29,6 @@ import { ProcessComponent } from './process/process.component';
     SharedModule,
     RouterModule,
     ReactiveFormsModule,
-    
   ],
 })
 export class PagesModule {}

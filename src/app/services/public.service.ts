@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-declare var $: any;
 
 @Injectable({
   providedIn: 'root',
@@ -12,57 +11,6 @@ export class PublicService {
   send_message(data: any): Observable<any> {
     const url = 'https://formspree.io/f/xwkabogv';
     return this.http.post(url, data);
-  }
-
-  init_carrousel() {
-    if (typeof window !== 'undefined') {
-      $('.owl-one').owlCarousel({
-        loop: true,
-        autoplay: true, //true if you want enable autoplay
-        autoPlayTimeout: 1000,
-        dots: false,
-        nav: false,
-        smartSpeed: 1500,
-        responsive: {
-          0: {
-            items: 4,
-          },
-          767: {
-            items: 4,
-          },
-          768: {
-            items: 8,
-          },
-          1200: {
-            items: 12,
-          },
-        },
-      });
-
-      $('.owl-two').owlCarousel({
-        loop: true,
-        autoplay: true, //true if you want enable autoplay
-        autoPlayTimeout: 1000,
-        dots: false,
-        nav: false,
-        smartSpeed: 1500,
-        rtl: true,
-        responsive: {
-          0: {
-            items: 4,
-          },
-          767: {
-            items: 4,
-          },
-          768: {
-            items: 8,
-          },
-          1200: {
-            items: 12,
-          },
-        },
-      });
-    }
   }
 
   services: any[] = [

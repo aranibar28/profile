@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { PublicService } from 'src/app/services/public.service';
 declare function init_gallery(): any;
 
@@ -7,10 +8,13 @@ declare function init_gallery(): any;
   templateUrl: './services.component.html',
 })
 export class ServicesComponent implements OnInit {
+  public isBrowser: boolean = false;
   public services: Array<any> = [];
   public gallery: Array<any> = [];
 
-  constructor(public publicService: PublicService) {}
+  constructor(public publicService: PublicService, @Inject(PLATFORM_ID) platformId: Object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
   ngOnInit(): void {
     this.services = this.publicService.services;
@@ -18,6 +22,8 @@ export class ServicesComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    init_gallery();
+    if (this.isBrowser) {
+      init_gallery();
+    }
   }
 }

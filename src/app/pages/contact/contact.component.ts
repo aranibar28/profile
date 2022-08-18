@@ -2,21 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PublicService } from 'src/app/services/public.service';
 import Swal from 'sweetalert2';
-declare function init_forms(): any;
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
 })
 export class ContactComponent implements OnInit {
-  public load_btn: boolean = false;
   public questions: Array<any> = [];
+  public load_btn: boolean = false;
 
   constructor(private publicService: PublicService, private fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.questions = this.publicService.questions;
-    init_forms();
   }
 
   myForm: FormGroup = this.fb.group({
